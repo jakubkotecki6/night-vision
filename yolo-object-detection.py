@@ -22,13 +22,13 @@ while True:
     result = model.predict(frame, conf=0.15)
 
     #   Full screen
-    #    cv2.namedWindow("camera", cv2.WND_PROP_FULLSCREEN)
-    #    cv2.setWindowProperty("camera", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+    cv2.namedWindow("frame", cv2.WND_PROP_FULLSCREEN)
+    cv2.setWindowProperty("frame", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
     #   Cropped to screen size and centered window
-    cv2.namedWindow("frame", cv2.WINDOW_NORMAL)
-    cv2.resizeWindow("frame", screenWidth, screenHeight)
-    cv2.moveWindow("frame", moveRight, moveDown)
+    #cv2.namedWindow("frame", cv2.WINDOW_NORMAL)
+    #cv2.resizeWindow("frame", screenWidth, screenHeight)
+    #cv2.moveWindow("frame", moveRight, moveDown)
     cv2.imshow("frame", result[0].plot())
 
     if cv2.waitKey(1) != -1:
