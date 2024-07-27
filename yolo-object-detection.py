@@ -7,7 +7,7 @@ cameraWidth, cameraHeight, cameraFramerate = 256, 192, 50
 screenWidth, screenHeight = 320, 192
 moveRight, moveDown = int((720 - screenWidth) / 2), int((480 - screenHeight) / 2)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, cameraWidth)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, cameraHeight)
 cap.set(cv2.CAP_PROP_FPS, cameraFramerate)
