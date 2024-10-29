@@ -6,7 +6,7 @@ model = YOLO("best.pt")
 cameraWidth, cameraHeight, cameraFramerate = 256, 192, 50
 confidenceThreshold = 0.35
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, cameraWidth)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, cameraHeight)
 cap.set(cv2.CAP_PROP_FPS, cameraFramerate)
